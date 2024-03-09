@@ -15,7 +15,8 @@ export default function Index() {
         <li><Link target="_blank" to="https://remix.run/tutorials/blog" rel="noreferrer">15m Quickstart Blog Tutorial</Link></li>
         <li><Link target="_blank" to="https://remix.run/tutorials/jokes" rel="noreferrer">Deep Dive Jokes App Tutorial</Link></li>
         <li><Link target="_blank" to="https://remix.run/docs" rel="noreferrer">Remix Docs</Link></li>
-        <li><Link to="/random-dog">Dog</Link></li>
+        <li><Link to="/random-dog">random Dog</Link></li>
+        <li><Link to="/search">Dog search</Link></li>
       </ul>
     </div>
   );
