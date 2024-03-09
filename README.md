@@ -1,5 +1,7 @@
 # 参考にしたサイト
 - [zenn Remix v2をCloudflare Pages + D1で動かすチュートリアル](https://zenn.dev/necocoa/articles/remix-v2-with-cloudflare-pages-d1)
+- [zenn ディレクトリ構成に関すること](https://zenn.dev/acompany/articles/70e84e04484b64)
+
 
 # Welcome to Remix!
 
