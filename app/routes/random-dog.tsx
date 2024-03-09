@@ -17,7 +17,7 @@ function Dog() {
 
 export default Dog;
 
-export async function loader({ request }: { request: Request }) {
+export async function loader() {
     // Implement your data loading logic here
     const response = await fetch('https://dog.ceo/api/breeds/image/random');
     const data = await response.json();
