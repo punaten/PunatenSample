@@ -37,7 +37,7 @@ export default function Index() {
         </li>
         <li>
           <a
-            href="/dog"
+            href="/random-dog"
           >
             Dog
           </a>
