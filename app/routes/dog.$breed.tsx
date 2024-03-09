@@ -21,18 +21,18 @@ export default Dog;
 
 export async function loader({
     params,
-    request,
+    // request,
 }: LoaderFunctionArgs) {
     // Implement your data loading logic herea
-    const cookie = request.headers.get("Cookie");
+    // const cookie = request.headers.get("Cookie");
 
     // parse the search params for `?q=`
-    const url = new URL(request.url);
-    const query = url.searchParams.get("q");
+    // const url = new URL(request.url);
+    // const query = url.searchParams.get("q");
 
     // console.log(cookie, query, url)
 
-    const bread = params.breed;
+    const bread = params.breed ?? "";
     console.log(bread);
 
     const response = await fetch(`https://dog.ceo/api/breed/${bread.toLowerCase()}/images/random`);

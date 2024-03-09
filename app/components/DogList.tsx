@@ -71,7 +71,7 @@ export default function DogList() {
     };
 
     return (
-        <div>
+        <div style={{ minWidth: "10rem" }}>
             {Object.entries(dogCategories).map(([category, data]) => (
                 <Accordion key={category} title={data.category_jp}>
                     <ul>

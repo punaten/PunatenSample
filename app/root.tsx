@@ -8,6 +8,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import DogList from "./components/DogList";
 
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
@@ -23,7 +24,14 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
+        <div style={{ display: 'flex', fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
+          <div style={{ flex: 1 }}>
+            <DogList />
+          </div>
+          <div style={{ flex: 1 }}>
+            <Outlet />
+          </div>
+        </div>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
