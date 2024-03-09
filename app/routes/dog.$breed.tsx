@@ -12,7 +12,12 @@ function Dog() {
             <img src={data.message} alt="random dog" />
             <h1>{data.message}</h1>
             <p>{data.status}</p>
-            <Link to="/">Go back</Link>
+            <div>
+                <Link to={"."}>再検索</Link>
+            </div>
+            <div>
+                <Link to="/">Go back</Link>
+            </div>
         </div>
     );
 }
